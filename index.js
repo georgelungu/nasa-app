@@ -106,7 +106,7 @@ const server = http.createServer((req, res) => {
 
 });
 
-server.listen(process.env.PORT || 3000, () => {
+server.listen(process.env.PORT || 3000, "127.0.0.1", () => {
 	const addr = server.address();
 	console.log(`Open this link in your browser: http://${addr.address}:${addr.port}`);
 });
